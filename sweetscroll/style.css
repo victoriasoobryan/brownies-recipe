@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.8 "Georgia", serif;
+  color: black;
+}
+
+.cd-logo, .intro-recipe, .cooking-time, .cake-ingredients,
+.baking-instructions {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: #060339;*/
+  background-color: black;
+  background-size: cover;
+  min-height: 100%;
+  /*opacity: 0.8;*/
+
+  background-attachment: fixed;
+}
+
+.cd-logo {
+  background-image: url(VVSlogo.png);
+  min-height: 100%;
+  background-size: 250px;
+}
+
+.intro-recipe {
+  background-image: url(brownies.jpeg);
+  text-align: center;
+}
+
+.cooking-time {
+  background-image: url(utensils.jpg);
+  text-align: center;
+}
+
+.cake-ingredients {
+  background-image: url(ingredients.jpg);
+  text-align: center;
+}
+
+.baking-instructions {
+  background-image: url(batter.jpg);
+  text-align: justify;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Times New Roman", serif;
+  color: black;
+  text-align: center;
+
+}
+
+h4 {
+  text-transform: uppercase;
+  font: 20px "Times New Roman", serif;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.textSection {
+  background-color: #d4d21d;
+  padding: 50px 90px;
+}
+
+.caption {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  /*background-color: #41BAC1;*/
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+/*No Parallax Scrolling for mobile/tablet devices that do not support it*/
+@media only screen and (max-device-width: 1024px) {
+  .cd-logo, .intro-recipe, .kitchen-equipment, .cake-ingredients {
+    background-attachment: scroll;
+  }
+}
